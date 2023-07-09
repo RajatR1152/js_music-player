@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d256fd2bec.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <div class="logo-div">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/9db278125546487.611baa396a9ed.png" alt=""
+                    class="logo">
+                <h1 class="heading">M U S I C - P L A Y E R</h1>
+            </div>
+            <div class="navs">
+                <button onclick="show()" class="nav-btn">music</button>
+                <button class="nav-btn">artists</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="musicContainer">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th>song</th>
+                    <th>artist</th>
+                    <th>double tap to play</th>
+                </tr>
+            </tbody>
+            <tbody id="list">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="controls">
+
+        <input type="range" value="0" name="range" id="range">
+
+        <div class="icons-container">
+            <i onclick="backward()" class="fa-solid fa-backward control-icon"></i>
+            <i onclick="playMusic(0)" id="playPause" class="fa-regular fa-circle-play control-icon"></i>
+            <i onclick="forward()" class="fa-solid fa-forward control-icon"></i>
+        </div>
+
+    </div>s
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
