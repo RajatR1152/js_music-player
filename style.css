@@ -1,0 +1,132 @@
+  @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600&display=swap');
+
+  * {
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+
+  /* --------------------HEADER----------------- */
+
+  body {
+    overflow-x: hidden;
+    background-color: black;
+  }
+
+  .container {
+    width: 99.5vw;
+  }
+
+  #header {
+    display: flex;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid gray;
+  }
+
+  .logo-div{
+    display: flex;
+  }
+
+  .logo {
+    width: 60px;
+    height: 50px;
+    border-radius: 55%;
+  }
+
+  .heading {
+    margin: 10px 20px;
+  }
+
+  .navs {
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .nav-btn {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    background-color: transparent;
+    border: 0;
+  }
+
+
+  /* ----------------MUSIC-CONTAINER----------------- */
+
+  #musicContainer {
+    height: 570px;
+    width: 99vw;
+    overflow-y: scroll;
+    margin: auto;
+    overflow-x: hidden;
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/9db278125546487.611baa396a9ed.png');
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+  }
+
+  tr {
+    border-bottom: 2px solid gray;
+    padding: 10px;
+  }
+
+  .table {
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+
+  td {
+    width: 33%;
+    padding: 10px;
+  }
+
+  /* -----------------CONTROLS-------------- */
+
+  .controls {
+    width: 99vw;
+    margin: auto;
+    padding: 10px;
+  }
+
+  #range {
+    width: 100%;
+  }
+
+  .icons-container {
+    width: fit-content;
+    padding: 10px;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    display: flex;
+  }
+
+  .control-icon {
+    font-size: 50px;
+    margin-left: 30px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .table-icon {
+    font-size: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    color: white;
+  }
+
+@media only screen and (max-width:600px){
+  #header{
+    display: block;
+  }
+  .heading{
+    font-size: 21px;
+  }
+}
